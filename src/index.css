@@ -1,4 +1,83 @@
-* {
+/* 
+** font-family: 'DM Sans', sans-serif; - available in regular 400, 400 italic, medium 500, 500 italic, bold 700, 700 italic
+** font-family: 'DM Serif Display', serif; - available in regular 400, 400 italic
+*/
+body.dark {
+  background: linear-gradient(39deg, var(--pine) 24%, var(--blue) 84%);
+}
+
+body.light {
+  background: linear-gradient(39deg, rgba(255, 164, 93, 0.8) 24%, rgba(225, 106, 61, 0.8) 84%);
+}
+
+:root {
+  --orange: #e16a3d;
+  --tangerine: #ffa45d;
+  --snow: #fffbfe;
+  --pine: #016a6d;
+  --blue: #043e52;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "DM Serif Display", serif;
+  color: var(--snow);
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "DM Sans", sans-serif;
+}
+
+#fp-nav span {
+  background: var(--tangerine) !important;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  color: var(--snow);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+nav.first {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+nav.scroll {
+  background-color: rgba(0, 0, 0, 0.7);
+
+  -webkit-transition: background-color 0.5s ease-in;
+  -moz-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+}
+
+a {
+  font-family: "DM Sans", sans-serif;
+  color: var(--snow);
+  text-decoration: none;
 }
