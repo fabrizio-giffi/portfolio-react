@@ -1,6 +1,7 @@
 import ReactFullpage from "@fullpage/react-fullpage";
 import SecondPage from "./SecondPage";
 import FirstPage from "./FirstPage";
+import ThirdPage from "./ThirdPage";
 
 const Fullpage = () => (
   <ReactFullpage
@@ -11,12 +12,7 @@ const Fullpage = () => (
     navigationPosition="left"
     anchors={["about", "work", "contact"]}
     menu="#navMenu"
-    sectionsColor={[
-      "linear-gradient(39deg, var(--pine) 24%, var(--blue) 84%);",
-      "linear-gradient(39deg, rgba(255,164,93,1) 24%, rgba(225,106,61,1) 84%)",
-      "#7BAABE",
-      "whitesmoke",
-    ]}
+    sectionsColor={["", "var(--snow)", ""]}
     render={({ state }) => {
       return (
         <ReactFullpage.Wrapper>
@@ -27,7 +23,7 @@ const Fullpage = () => (
             <SecondPage />
           </div>
           <div className="section">
-            <p>Section 3</p>
+            <ThirdPage />
           </div>
         </ReactFullpage.Wrapper>
       );

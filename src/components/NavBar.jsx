@@ -13,7 +13,6 @@ function NavBar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   const changeStyle = () => {
-    console.log(location);
     if (location.hash === "#about" || location.hash === "") {
       setFirstPage(true);
     } else {
