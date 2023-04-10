@@ -22,25 +22,23 @@ function SecondPage() {
           justifyContent: "center",
         }}
       >
-        <Divider />
         <Box className={display === "top" ? "work clicked" : "work"} id="top" onClick={() => setDisplay("top")}>
           <Typography id="topZoom" variant="h4">
             Junior Jobs
           </Typography>
         </Box>
-        <Divider />
+        <Divider sx={{ width: "calc(100% - 20px)", alignSelf: "center" }} />
         <Box className={display === "center" ? "work clicked" : "work"} id="center" onClick={() => setDisplay("center")}>
           <Typography id="centerZoom" variant="h4">
             Dean Town
           </Typography>
         </Box>
-        <Divider />
+        <Divider sx={{ width: "calc(100% - 20px)", alignSelf: "center" }} />
         <Box className={display === "bottom" ? "work clicked" : "work"} id="bottom" onClick={() => setDisplay("bottom")}>
           <Typography id="bottomZoom" variant="h4">
             Ye OldeJack
           </Typography>
         </Box>
-        <Divider />
       </Box>
     </Box>
   );

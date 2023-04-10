@@ -1,8 +1,12 @@
-import { Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+import LanguageIcon from "@mui/icons-material/Language";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { Link } from "react-router-dom";
 
 function JuniorJobs() {
   return (
     <>
+      <Box className="background junior" sx={{ width: "100%", height: "100%" }}></Box>
       <Typography variant="h4">Junior Jobs</Typography>
       <Typography>
         Junior Jobs is a job platform for users to connect with companies - and apply for junior developer positions - and for
@@ -10,6 +14,14 @@ function JuniorJobs() {
         on Express.js. The project has been showcased during the Hackshow on March 29th, 2023 in front of a live audience of 150
         people and has been voted for the best project in the Web Development category.
       </Typography>
+      <Stack direction="row" spacing={2}>
+        <Link to="https://juniorjobs-frontend.netlify.app/" target="_blank">
+          <LanguageIcon sx={{ color: "var(--text-primary)" }} fontSize="large" />
+        </Link>
+        <Link to="https://github.com/fabrizio-giffi" target="_blank">
+          <GitHubIcon sx={{ color: "var(--text-primary)" }} fontSize="large" />
+        </Link>
+      </Stack>
     </>
   );
 }

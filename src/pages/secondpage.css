@@ -3,16 +3,18 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.4s;
+  border-radius: 10px;
+  color: var(--text-primary);
 }
 
 .work:hover {
   cursor: pointer;
 }
 
-.work.clicked {
+/* .work.clicked {
   height: 30% !important;
   background: linear-gradient(90deg, rgba(255, 164, 93, 0.6), rgba(255, 251, 254, 1) 65%);
-}
+} */
 
 .work#top {
   height: 20%;
@@ -21,12 +23,13 @@
 }
 
 .work#top:hover {
-  background-color: rgba(255, 164, 93, 0.4);
-  transition: background-color 1s;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--snow);
+  transition: background-color 0.7s, color 0.4s;
 }
 
 .work#top:hover #topZoom {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   transition: transform 0.3s;
 }
 
@@ -60,4 +63,27 @@
 .work#bottom:hover #bottomZoom {
   transform: scale(1.1);
   transition: transform 0.3s;
+}
+
+.background {
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.junior {
+  background-image: linear-gradient(to bottom, transparent 70%, var(--snow)),
+    url("https://res.cloudinary.com/dujsafeed/image/upload/v1681161668/JuniorJobs_bijjq4.jpg");
+  background-position: center;
+}
+
+.dean {
+  background-image: linear-gradient(to bottom, transparent 70%, var(--snow)),
+    url("https://res.cloudinary.com/dujsafeed/image/upload/v1681161325/Dean_a3ykju.jpg");
+  background-position: top;
+}
+
+.olde {
+  background-image: linear-gradient(to bottom, transparent 70%, var(--snow)),
+    url("https://res.cloudinary.com/dujsafeed/image/upload/v1681161326/Oldejack_hwzmbj.jpg");
+  background-position: center;
 }

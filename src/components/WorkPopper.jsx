@@ -9,10 +9,28 @@ function WorkPopper({ display, setDisplay }) {
     <>
       <Box sx={{ minWidth: "70%", height: "calc(100% - 2.5rem)" }}>
         <Box sx={{ height: "100%", boxSizing: "border-box", py: 7, px: 10, display: "flex", flexDirection: "column" }}>
-          <IconButton sx={{ alignSelf: "start" }} onClick={() => setDisplay("main")}>
-            <ArrowBackIcon fontSize="large" />
-          </IconButton>
-          <Box sx={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+          <Box
+            sx={{
+              position: "relative",
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <IconButton
+              sx={{
+                position: "absolute",
+                top: 15,
+                left: 15,
+                bgcolor: "rgba(0, 0, 0, 0.4)",
+                "&:hover": { bgcolor: "rgba(0, 0, 0, 0.7)", transform: "scale(1.2)", transition: "transform 0.4s" },
+              }}
+              onClick={() => setDisplay("main")}
+            >
+              <ArrowBackIcon sx={{ color: "var(--snow)" }} fontSize="medium" />
+            </IconButton>
             {display === "top" && <JuniorJobs />}
             {display === "center" && <DeanTown />}
             {display === "bottom" && <YeOldeJack />}
