@@ -11,6 +11,8 @@ body.light {
 }
 
 :root {
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.6);
   --orange: #e16a3d;
   --tangerine: #ffa45d;
   --snow: #fffbfe;
@@ -61,19 +63,22 @@ nav {
 
 nav.first {
   background-color: rgba(0, 0, 0, 0);
+
   -webkit-transition: background-color 0.5s ease-out;
   -moz-transition: background-color 0.5s ease-out;
   -o-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
+  transition-delay: 500ms;
+  transition-property: background-color;
 }
 
 nav.scroll {
   background-color: rgba(0, 0, 0, 0.7);
 
-  -webkit-transition: background-color 0.5s ease-in;
-  -moz-transition: background-color 0.5s ease-in;
-  -o-transition: background-color 0.5s ease-in;
-  transition: background-color 0.5s ease-in;
+  -webkit-transition: background-color 0.7s ease-in;
+  -moz-transition: background-color 0.7s ease-in;
+  -o-transition: background-color 0.7s ease-in;
+  transition: background-color 0.7s ease-in;
 }
 
 a {

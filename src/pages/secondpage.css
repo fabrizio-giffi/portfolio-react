@@ -4,54 +4,39 @@
   justify-content: center;
 }
 
-.work#left {
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  height: 100vh;
-  width: 33%;
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+.work:hover {
+  cursor: pointer;
+}
+
+.work#top {
+  height: 33%;
+  width: 100%;
   background-size: cover;
 }
-.work#left:hover {
-  z-index: 2;
-  width: 50%;
-  clip-path: none;
-  transition: clip-path 0.7s;
-  transition: width 0.7s;
+
+.work#top:hover #topZoom {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
 
 .work#center {
-  position: absolute;
-  margin: 0 auto;
-  height: 100vh;
+  height: 33%;
   width: 100%;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   background-size: cover;
 }
 
-.work#center:hover {
-  z-index: 2;
-  width: 50%;
-  clip-path: none;
-  transition: clip-path 0.7s;
-  transition: width 0.7s;
+.work#center:hover #centerZoom {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
 
-.work#right {
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  height: 100vh;
-  width: 33%;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+.work#bottom {
+  height: 33%;
+  width: 100%;
   background-size: cover;
 }
 
-.work#right:hover {
-  z-index: 2;
-  width: 50%;
-  clip-path: none;
-  transition: clip-path 0.7s;
-  transition: width 0.7s;
+.work#bottom:hover #bottomZoom {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
