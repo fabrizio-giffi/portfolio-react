@@ -2,16 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.4s;
 }
 
 .work:hover {
   cursor: pointer;
 }
 
+.work.clicked {
+  height: 30% !important;
+  background: linear-gradient(90deg, rgba(255, 164, 93, 0.6), rgba(255, 251, 254, 1) 65%);
+}
+
 .work#top {
-  height: 33%;
+  height: 20%;
   width: 100%;
   background-size: cover;
+}
+
+.work#top:hover {
+  background-color: rgba(255, 164, 93, 0.4);
+  transition: background-color 1s;
 }
 
 .work#top:hover #topZoom {
@@ -20,9 +31,14 @@
 }
 
 .work#center {
-  height: 33%;
+  height: 20%;
   width: 100%;
   background-size: cover;
+}
+
+.work#center:hover {
+  background-color: rgba(255, 164, 93, 0.4);
+  transition: background-color 1s;
 }
 
 .work#center:hover #centerZoom {
@@ -31,9 +47,14 @@
 }
 
 .work#bottom {
-  height: 33%;
+  height: 20%;
   width: 100%;
   background-size: cover;
+}
+
+.work#bottom:hover {
+  background-color: rgba(255, 164, 93, 0.4);
+  transition: background-color 1s;
 }
 
 .work#bottom:hover #bottomZoom {
