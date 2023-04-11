@@ -11,10 +11,10 @@
   cursor: pointer;
 }
 
-/* .work.clicked {
-  height: 30% !important;
-  background: linear-gradient(90deg, rgba(255, 164, 93, 0.6), rgba(255, 251, 254, 1) 65%);
-} */
+.work.clicked {
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--snow);
+}
 
 .work#top {
   height: 20%;
@@ -72,7 +72,7 @@
 
 .junior {
   background-image: linear-gradient(to bottom, transparent 70%, var(--snow)),
-    url("https://res.cloudinary.com/dujsafeed/image/upload/v1681161668/JuniorJobs_bijjq4.jpg");
+    url("https://res.cloudinary.com/dujsafeed/image/upload/v1681169229/scott-graham-OQMZwNd3ThU-unsplash_a9zbsr.jpg");
   background-position: center;
 }
 
