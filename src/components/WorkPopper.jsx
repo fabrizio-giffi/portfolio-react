@@ -3,19 +3,19 @@ import DeanTown from "./DeanTown";
 import JuniorJobs from "./JuniorJobs";
 import YeOldeJack from "./YeOldeJack";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { useSpring, animated } from "@react-spring/web";
+// import { useSpring, animated } from "@react-spring/web";
 
 function WorkPopper({ display, setDisplay }) {
-  const props = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    reset: true,
-    config: {
-      mass: 1,
-      friction: 45,
-      tension: 120,
-    },
-  });
+  // const props = useSpring({
+  //   from: { opacity: 0 },
+  //   to: { opacity: 1 },
+  //   reset: true,
+  //   config: {
+  //     mass: 1,
+  //     friction: 45,
+  //     tension: 120,
+  //   },
+  // });
 
   return (
     <>
@@ -44,21 +44,9 @@ function WorkPopper({ display, setDisplay }) {
             >
               <ArrowBackIcon sx={{ color: "var(--snow)" }} fontSize="medium" />
             </IconButton>
-            {display === "top" && (
-              <animated.div style={props}>
-                <JuniorJobs />
-              </animated.div>
-            )}
-            {display === "center" && (
-              <animated.div style={props}>
-                <DeanTown />
-              </animated.div>
-            )}
-            {display === "bottom" && (
-              <animated.div style={props}>
-                <YeOldeJack />
-              </animated.div>
-            )}
+            {display === "top" && <JuniorJobs />}
+            {display === "center" && <DeanTown />}
+            {display === "bottom" && <YeOldeJack />}
           </Box>
         </Box>
       </Box>

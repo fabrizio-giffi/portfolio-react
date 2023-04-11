@@ -17,15 +17,15 @@ function ThirdPage() {
 
   return (
     <Container maxWidth="sm" sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <Typography variant="h2">Get in touch</Typography>
-      <Card component="form" sx={{ width: "100%", p: 4 }} onSubmit={sendMessage}>
+      <Typography variant="h2">Let's work together!</Typography>
+      <Card component="form" sx={{ width: "100%", p: 4 /* bgcolor: "rgba(0, 0, 0, 0)" */ }} onSubmit={sendMessage}>
         <Stack direction="row" spacing={2} sx={{ width: "100%", display: "flex", alignItems: "center", mb: 2 }}>
-          <AccountCircleIcon fontSize="large" />{" "}
+          <AccountCircleIcon fontSize="large" sx={{ color: "var(--primary)" }} />
           <TextField fullWidth label="Contact info" variant="filled" onChange={(event) => setContact(event.target.value)} />
         </Stack>
 
         <Stack direction="row" spacing={2} sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-          <EmailIcon fontSize="large" />{" "}
+          <EmailIcon fontSize="large" sx={{ color: "var(--primary)" }} />
           <TextField fullWidth label="Email address" variant="filled" onChange={(event) => setEmail(event.target.value)} />
         </Stack>
         <Stack sx={{ mb: 2 }}>
@@ -41,15 +41,16 @@ function ThirdPage() {
         <Button
           variant="contained"
           sx={{
-            bgcolor: "var(--blue)",
+            bgcolor: "var(--primary)",
+            color: "var(--snow)",
             "&:hover": {
-              bgcolor: "var(--tangerine)",
-              color: "var(--blue)",
+              bgcolor: "var(--sec-trans)",
+              color: "var(--text-secondary)",
             },
           }}
           type="submit"
         >
-          Click
+          Send
         </Button>
       </Card>
     </Container>
