@@ -3,20 +3,8 @@ import DeanTown from "./DeanTown";
 import JuniorJobs from "./JuniorJobs";
 import YeOldeJack from "./YeOldeJack";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-// import { useSpring, animated } from "@react-spring/web";
 
 function WorkPopper({ display, setDisplay }) {
-  // const props = useSpring({
-  //   from: { opacity: 0 },
-  //   to: { opacity: 1 },
-  //   reset: true,
-  //   config: {
-  //     mass: 1,
-  //     friction: 45,
-  //     tension: 120,
-  //   },
-  // });
-
   return (
     <>
       <Box sx={{ minWidth: "70%", height: "calc(100% - 2.5rem)" }}>

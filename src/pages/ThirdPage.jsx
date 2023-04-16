@@ -1,9 +1,12 @@
-import { Button, Card, Container, Stack, TextField, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, TextField, Typography } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 import { useState } from "react";
+import { send } from "emailjs-com";
 
-const password = import.meta.env.NODEMAILER_APP;
+const mailerService = import.meta.env.VITE_EMAIL_SERVICE;
+const mailerTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
+const mailerKey = import.meta.env.VITE_EMAIL_KEY;
 
 function ThirdPage() {
   const [contact, setContact] = useState("");
@@ -11,14 +14,24 @@ function ThirdPage() {
   const [message, setMessage] = useState("");
   const [succesful, setSuccesful] = useState(false);
 
-  const sendMessage = () => {
-    return;
+  const sendMessage = (event) => {
+    event.preventDefault();
+    const toSend = { from_name: contact, message: message, reply_to: email };
+    send(mailerService, mailerTemplate, toSend, mailerKey)
+      .then((response) => {
+        console.log(response.status, "Message succesfully sent ");
+        setSuccesful(true);
+      })
+      .catch((error) => {
+        console.log("Something went wrong: ", error);
+      });
   };
 
   return (
     <Container maxWidth="sm" sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div className="stripe"></div>
       <Typography variant="h2">Let's work together!</Typography>
-      <Card component="form" sx={{ width: "100%", p: 4 /* bgcolor: "rgba(0, 0, 0, 0)" */ }} onSubmit={sendMessage}>
+      <Box component="form" sx={{ width: "100%", p: 4 }} onSubmit={(event) => sendMessage(event)}>
         <Stack direction="row" spacing={2} sx={{ width: "100%", display: "flex", alignItems: "center", mb: 2 }}>
           <AccountCircleIcon fontSize="large" sx={{ color: "var(--primary)" }} />
           <TextField fullWidth label="Contact info" variant="filled" onChange={(event) => setContact(event.target.value)} />
@@ -52,7 +65,7 @@ function ThirdPage() {
         >
           Send
         </Button>
-      </Card>
+      </Box>
     </Container>
   );
 }

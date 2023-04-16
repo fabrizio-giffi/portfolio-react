@@ -1,0 +1,27 @@
+:root {
+  --profile: url("https://res.cloudinary.com/dujsafeed/image/upload/v1681652893/noBG_amuj0a.png");
+}
+
+.ctn-profile {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 400px;
+}
+
+.ctn-profile img {
+  position: absolute;
+  max-height: 100%;
+  inset: 5%;
+}
+
+.bkgr {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  width: 450px;
+  height: 240px;
+  background-color: var(--snow);
+  z-index: -1;
+  border-radius: 180px 180px 0 0;
+}
