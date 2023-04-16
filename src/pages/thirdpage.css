@@ -1,0 +1,26 @@
+/* MUI - label text */
+.dark label[data-shrink="false"] {
+  color: var(--snow) !important;
+}
+
+.light label[data-shrink="false"] {
+  color: var(--text-secondary) !important;
+}
+
+label[data-shrink="true"] {
+  color: var(--comp-trans) !important;
+}
+
+/* MUI - input fields */
+.dark .MuiInputBase-root {
+  color: var(--snow) !important;
+}
+
+.light .MuiInputBase-root {
+  color: var(--text-primary) !important;
+}
+
+/* MUI - input fields bottom border */
+.MuiInputBase-root::after {
+  border-bottom: 2px solid var(--comp-trans) !important;
+}

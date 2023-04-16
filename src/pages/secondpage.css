@@ -53,3 +53,8 @@
   background-image: var(--style), var(--olde-url);
   background-position: center;
 }
+
+/* MUI - dividers */
+.MuiDivider-root {
+  border-color: var(--sec-trans) !important;
+}

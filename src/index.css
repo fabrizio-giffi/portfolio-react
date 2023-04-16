@@ -101,7 +101,14 @@ nav.scroll {
 
 nav a {
   color: var(--snow);
-  text-decoration: none;
+  text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--snow);
+  text-decoration-thickness: 2px;
+  transition: text-decoration-color 500ms;
 }
 
 a {
@@ -109,14 +116,24 @@ a {
   text-decoration: none;
 }
 
-label[data-shrink="true"] {
-  color: var(--contrast) !important;
+#first,
+#third {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.MuiInputBase-root::after {
-  border-bottom: 2px solid var(--contrast) !important;
+.dark #first {
+  background-image: url("/dark-first.svg");
 }
 
-.MuiDivider-root {
-  border-color: var(--sec-trans) !important;
+.dark #third {
+  background-image: url("/dark-third.svg");
+}
+
+.light #first {
+  background-image: url("/light-first.svg");
+}
+
+.light #third {
+  background-image: url("/light-first.svg");
 }

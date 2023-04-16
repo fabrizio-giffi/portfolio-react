@@ -16,13 +16,13 @@ const Fullpage = () => (
     render={({ state }) => {
       return (
         <ReactFullpage.Wrapper>
-          <div className="section">
+          <div id="first" className="section">
             <FirstPage />
           </div>
-          <div className="section">
+          <div id="second" className="section">
             <SecondPage />
           </div>
-          <div className="section">
+          <div id="third" className="section">
             <ThirdPage />
           </div>
         </ReactFullpage.Wrapper>

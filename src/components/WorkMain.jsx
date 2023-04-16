@@ -12,14 +12,15 @@ function WorkMain() {
         justifyContent: "center",
       }}
     >
-      <Typography color="var(--text-primary)" variant="h2">
+      <Typography mb={3} color="var(--text-primary)" variant="h2">
         Creative and detail-oriented
       </Typography>
-      <Typography color="var(--text-primary)" variant="h4">
-        Bla bla bla some text
+      <Typography mb={3} color="var(--text-primary)" variant="h4">
+        Lorem ipsum dolor sit amet.
       </Typography>
-      <Typography color="var(--text-primary)" variant="h4">
-        Maybe some creative effect like text writing itself
+      <Typography textAlign="center" color="var(--text-primary)" variant="h6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </Typography>
     </Box>
   );
