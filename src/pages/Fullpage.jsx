@@ -12,7 +12,6 @@ const Fullpage = () => (
     navigationPosition="left"
     anchors={["about", "work", "contact"]}
     menu="#navMenu"
-    sectionsColor={["", "var(--snow)", ""]}
     render={({ state }) => {
       return (
         <ReactFullpage.Wrapper>

@@ -3,7 +3,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "react-router-dom";
 
-function DeanTown() {
+function DeanTown({ theme }) {
   return (
     <>
       <Box className="background dean" sx={{ width: "100%", height: "100%" }}></Box>
@@ -31,10 +31,10 @@ function DeanTown() {
         <Divider sx={{ my: 2 }} />
         <Stack direction="row" spacing={2} sx={{ display: "flex", justifyContent: "center" }}>
           <Link to="https://iron-store.adaptable.app/" target="_blank">
-            <LanguageIcon sx={{ color: "var(--text-primary)" }} fontSize="large" />
+            <LanguageIcon sx={{ color: theme === "light" ? "var(--text-primary)" : "var(--snow)" }} fontSize="large" />
           </Link>
           <Link to="https://github.com/DeanStavenuiter/ironhack-ecommerce" target="_blank">
-            <GitHubIcon sx={{ color: "var(--text-primary)" }} fontSize="large" />
+            <GitHubIcon sx={{ color: theme === "light" ? "var(--text-primary)" : "var(--snow)" }} fontSize="large" />
           </Link>
         </Stack>
       </Box>

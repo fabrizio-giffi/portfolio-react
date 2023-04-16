@@ -1,23 +1,24 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 import "./firstpage.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 function FirstPage() {
+  const { theme } = useContext(ThemeContext);
   return (
     <Container sx={{ display: "flex", maxHeight: "100vh", alignItems: "center", justifyContent: "space-around" }}>
       <Box>
         <Typography variant="h1">Fabrizio Giffi</Typography>
-        <Typography mb={3} variant="h4" color="var(--snow)">
+        <Typography mb={3} variant="h4" sx={{ color: theme === "light" ? "var(--text-secondary) !important" : "var(--snow) !important" }}>
           {"< Junior full-stack web developer />"}
         </Typography>
         <Button
           variant="contained"
           sx={{
             bgcolor: "var(--comp-trans)",
-            color: "var(--snow)",
             "&:hover": {
               bgcolor: "var(--comp)",
-              color: "var(--text-secondary)",
             },
           }}
         >

@@ -3,8 +3,11 @@ import DeanTown from "./DeanTown";
 import JuniorJobs from "./JuniorJobs";
 import YeOldeJack from "./YeOldeJack";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
 
 function WorkPopper({ display, setDisplay }) {
+  const { theme } = useContext(ThemeContext);
   return (
     <>
       <Box sx={{ minWidth: "70%", height: "calc(100% - 2.5rem)" }}>
@@ -32,9 +35,9 @@ function WorkPopper({ display, setDisplay }) {
             >
               <ArrowBackIcon sx={{ color: "var(--snow)" }} fontSize="medium" />
             </IconButton>
-            {display === "top" && <JuniorJobs />}
-            {display === "center" && <DeanTown />}
-            {display === "bottom" && <YeOldeJack />}
+            {display === "top" && <JuniorJobs theme={theme} />}
+            {display === "center" && <DeanTown theme={theme} />}
+            {display === "bottom" && <YeOldeJack theme={theme} />}
           </Box>
         </Box>
       </Box>

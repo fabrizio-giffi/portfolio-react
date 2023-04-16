@@ -31,12 +31,19 @@
 }
 
 .background {
-  --style: linear-gradient(to bottom, transparent 70%, var(--snow));
   --junior-url: url("https://res.cloudinary.com/dujsafeed/image/upload/v1681653075/Junior_ryexw0.jpg");
   --dean-url: url("https://res.cloudinary.com/dujsafeed/image/upload/v1681161325/Dean_a3ykju.jpg");
   --olde-url: url("https://res.cloudinary.com/dujsafeed/image/upload/v1681161326/Oldejack_hwzmbj.jpg");
   background-size: cover;
   border-radius: 10px 10px 0 0;
+}
+
+.dark .background {
+  --style: linear-gradient(to bottom, transparent 70%, rgb(22, 22, 22));
+}
+
+.light .background {
+  --style: linear-gradient(to bottom, transparent 70%, var(--snow));
 }
 
 .junior {

@@ -6,8 +6,8 @@
 body.light {
   --text-primary: rgba(0, 0, 0, 0.87);
   --text-secondary: rgba(0, 0, 0, 0.6);
-  --primary: rgba(225, 106, 61, 0.8);
-  --secondary: rgba(255, 164, 93, 0.8);
+  --primary: #efaa90;
+  --secondary: #ffe9d9;
   --sec-trans: rgba(255, 164, 93, 0.4);
   --snow: rgb(255, 251, 254);
   --comp: rgb(1, 106, 109);
@@ -39,25 +39,42 @@ body {
   background: linear-gradient(39deg, var(--secondary) 24%, var(--primary) 84%);
 }
 
-h1,
-h2 {
+.light h1,
+.light h2 {
+  font-family: "DM Serif Display", serif;
+  color: var(--text-secondary);
+}
+
+.dark h1,
+.dark h2 {
   font-family: "DM Serif Display", serif;
   color: var(--snow);
 }
 
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-strong {
+.light h3,
+.light h4,
+.light h5,
+.light h6,
+.light p,
+.light a,
+.light strong {
   font-family: "DM Sans", sans-serif;
   color: var(--text-primary);
 }
 
-button a {
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark a,
+.dark strong {
+  font-family: "DM Sans", sans-serif;
   color: var(--snow);
+}
+
+button a {
+  color: var(--snow) !important;
 }
 
 #fp-nav span {
@@ -100,7 +117,7 @@ nav.scroll {
 }
 
 nav a {
-  color: var(--snow);
+  color: var(--snow) !important;
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 
@@ -114,6 +131,14 @@ nav a:hover {
 a {
   color: var(--secondary);
   text-decoration: none;
+}
+
+.light #second {
+  background-color: var(--snow);
+}
+
+.dark #second {
+  background-color: rgb(25, 25, 25);
 }
 
 #first,
