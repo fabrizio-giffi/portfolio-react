@@ -10,17 +10,20 @@ function WorkMain() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        px: 13,
       }}
     >
-      <Typography mb={3} color="var(--text-primary)" variant="h2">
+      <Typography mb={3} color="var(--text-primary)" variant="h2" textAlign={"center"}>
         Creative and detail-oriented
       </Typography>
-      <Typography mb={3} color="var(--text-primary)" variant="h4">
-        Lorem ipsum dolor sit amet.
+      <Typography mb={3} color="var(--text-primary)" variant="h5" textAlign={"center"}>
+        As a web developer I strive for finding the sweet spot between an aesthetically pleasing interface and a seamlessly
+        operating system running in the background.
+        <br />I favour a <strong>clean</strong> and <strong>minimalist</strong> design without compromising on{" "}
+        <strong>functionality</strong>.
       </Typography>
-      <Typography textAlign="center" color="var(--text-primary)" variant="h6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <Typography textAlign="center" color="var(--text-primary)" variant="h6" mt={3}>
+        Check out my recent works →
       </Typography>
     </Box>
   );

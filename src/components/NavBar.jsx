@@ -1,10 +1,10 @@
 import { Box, Container, List, ListItem, Stack, Typography } from "@mui/material";
+import { useContext, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import { Link, useLocation } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
 function NavBar() {
@@ -29,7 +29,7 @@ function NavBar() {
       <Container sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <Box title="Toggle dark/light mode">
           {theme === "light" ? (
-            <DarkModeIcon  sx={{ cursor: "pointer" }} onClick={toggleTheme} fontSize="large" />
+            <DarkModeIcon sx={{ cursor: "pointer" }} onClick={toggleTheme} fontSize="large" />
           ) : (
             <LightModeIcon sx={{ cursor: "pointer" }} onClick={toggleTheme} fontSize="large" />
           )}
