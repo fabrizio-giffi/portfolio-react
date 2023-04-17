@@ -1,8 +1,8 @@
 import { Box, Button, Container, Typography } from "@mui/material";
-import "./firstpage.css";
-import { Link } from "react-router-dom";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
+import "./firstpage.css";
 
 function FirstPage() {
   const { theme } = useContext(ThemeContext);

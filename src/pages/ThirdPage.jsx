@@ -1,13 +1,13 @@
 import { Alert, Box, Button, Container, Divider, Stack, TextField, Typography } from "@mui/material";
+import { useContext, useState } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
-import { useContext, useState } from "react";
-import { send } from "emailjs-com";
-import { ThemeContext } from "../context/ThemeContext";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import "./thirdpage.css";
 import { Link } from "react-router-dom";
+import { send } from "emailjs-com";
+import "./thirdpage.css";
 
 const mailerService = import.meta.env.VITE_EMAIL_SERVICE;
 const mailerTemplate = import.meta.env.VITE_EMAIL_TEMPLATE;
@@ -70,7 +70,7 @@ function ThirdPage() {
               </Alert>
             )}
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <Button sx={{width: "30%"}} size="large" variant="contained" type="submit">
+              <Button sx={{ width: "30%" }} size="large" variant="contained" type="submit">
                 <span>Send</span>
               </Button>
             </Box>

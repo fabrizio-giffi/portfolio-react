@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import NotFound from "./pages/NotFound";
 import Fullpage from "./pages/Fullpage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (

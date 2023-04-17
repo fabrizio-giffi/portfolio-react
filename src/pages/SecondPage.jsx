@@ -1,8 +1,8 @@
 import { Box, Divider, Typography } from "@mui/material";
-import "./secondpage.css";
 import { useState } from "react";
 import WorkMain from "../components/WorkMain";
 import WorkPopper from "../components/WorkPopper";
+import "./secondpage.css";
 
 function SecondPage() {
   const [display, setDisplay] = useState("main");

@@ -1,6 +1,6 @@
 import ReactFullpage from "@fullpage/react-fullpage";
-import SecondPage from "./SecondPage";
 import FirstPage from "./FirstPage";
+import SecondPage from "./SecondPage";
 import ThirdPage from "./ThirdPage";
 
 const Fullpage = () => (
