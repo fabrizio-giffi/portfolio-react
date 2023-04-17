@@ -30,10 +30,10 @@ function YeOldeJack({ theme }) {
         </Typography>
         <Divider sx={{ my: 2 }} />
         <Stack direction="row" spacing={2} sx={{ display: "flex", justifyContent: "center" }}>
-          <Link to="https://fabrizio-giffi.github.io/Ye-OldeJack" target="_blank">
+          <Link title="Deployed website" to="https://fabrizio-giffi.github.io/Ye-OldeJack" target="_blank">
             <LanguageIcon sx={{ color: theme === "light" ? "var(--text-primary)" : "var(--snow)" }} fontSize="large" />
           </Link>
-          <Link to="https://github.com/fabrizio-giffi/Ye-OldeJack" target="_blank">
+          <Link title="GitHub repo" to="https://github.com/fabrizio-giffi/Ye-OldeJack" target="_blank">
             <GitHubIcon sx={{ color: theme === "light" ? "var(--text-primary)" : "var(--snow)" }} fontSize="large" />
           </Link>
         </Stack>

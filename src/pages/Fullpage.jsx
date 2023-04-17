@@ -7,7 +7,7 @@ const Fullpage = () => (
   <ReactFullpage
     //fullpage options
     licenseKey="gplv3-license"
-    scrollingSpeed={1000} /* Options here */
+    scrollingSpeed={1000}
     navigation="true"
     navigationPosition="left"
     anchors={["about", "work", "contact"]}

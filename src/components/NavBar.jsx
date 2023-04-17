@@ -27,9 +27,9 @@ function NavBar() {
   return (
     <nav className={secondPage ? "scroll" : "first"}>
       <Container sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <Box>
+        <Box title="Toggle dark/light mode">
           {theme === "light" ? (
-            <DarkModeIcon sx={{ cursor: "pointer" }} onClick={toggleTheme} fontSize="large" />
+            <DarkModeIcon  sx={{ cursor: "pointer" }} onClick={toggleTheme} fontSize="large" />
           ) : (
             <LightModeIcon sx={{ cursor: "pointer" }} onClick={toggleTheme} fontSize="large" />
           )}
@@ -53,10 +53,10 @@ function NavBar() {
             </ListItem>
           </List>
           <Stack direction="row" spacing={2}>
-            <Link to="https://www.linkedin.com/in/fabrizio-giffi" target="_blank">
+            <Link title="LinkedIn" to="https://www.linkedin.com/in/fabrizio-giffi" target="_blank">
               <LinkedInIcon fontSize="large" />
             </Link>
-            <Link to="https://github.com/fabrizio-giffi" target="_blank">
+            <Link title="GitHub" to="https://github.com/fabrizio-giffi" target="_blank">
               <GitHubIcon fontSize="large" />
             </Link>
           </Stack>

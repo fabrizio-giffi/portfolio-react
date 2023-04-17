@@ -7,23 +7,34 @@ import { ThemeContext } from "../context/ThemeContext";
 function FirstPage() {
   const { theme } = useContext(ThemeContext);
   return (
-    <Container sx={{ display: "flex", maxHeight: "100vh", alignItems: "center", justifyContent: "space-around" }}>
-      <Box>
+    <Container sx={{ display: "flex", alignItems: "end", justifyContent: "space-around", mb: 13 }}>
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         <Typography variant="h1">Fabrizio Giffi</Typography>
         <Typography
-          mb={3}
           variant="h4"
-          sx={{ color: theme === "light" ? "var(--text-secondary) !important" : "var(--snow) !important" }}
+          sx={{ color: theme === "light" ? "var(--text-secondary) !important" : "var(--snow) !important", mb: 3 }}
         >
           {"< Junior full-stack web developer />"}
         </Typography>
-        <Button variant="contained">
+        <Typography
+          variant="h6"
+          sx={{
+            color: theme === "light" ? "var(--text-secondary) !important" : "var(--snow) !important",
+            textAlign: "center",
+            mb: 3,
+          }}
+        >
+          Italian living in Germany // Musician and avid gamer
+          <br />
+          Open to work, both in full-time or freelance positions
+        </Typography>
+        <Button size="large" variant="contained">
           <Link to="/CV-FabrizioGiffi.pdf" target="_blank">
-            Download Resumé
+            Download Resume
           </Link>
         </Button>
       </Box>
-      <Box className="ctn-profile">
+      <Box sx={{ px: 6 }} className="ctn-profile">
         <img src="https://res.cloudinary.com/dujsafeed/image/upload/v1681654707/noBG_ct8mvq.png" alt="Profile" />
         <div className="bkgr"></div>
       </Box>

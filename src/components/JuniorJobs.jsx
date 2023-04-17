@@ -33,10 +33,10 @@ function JuniorJobs({ theme }) {
         </Typography>
         <Divider sx={{ my: 1 }} />
         <Stack direction="row" spacing={2} sx={{ display: "flex", justifyContent: "center" }}>
-          <Link to="https://juniorjobs-frontend.netlify.app/" target="_blank">
+          <Link title="Deployed website" to="https://juniorjobs-frontend.netlify.app/" target="_blank">
             <LanguageIcon sx={{ color: theme === "light" ? "var(--text-primary)" : "var(--snow)" }} fontSize="large" />
           </Link>
-          <Link to="https://github.com/fabrizio-giffi/juniorjobs-fullstack" target="_blank">
+          <Link title="GitHub repo" to="https://github.com/fabrizio-giffi/juniorjobs-fullstack" target="_blank">
             <GitHubIcon sx={{ color: theme === "light" ? "var(--text-primary)" : "var(--snow)" }} fontSize="large" />
           </Link>
         </Stack>

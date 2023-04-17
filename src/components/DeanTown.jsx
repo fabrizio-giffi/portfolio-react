@@ -30,10 +30,10 @@ function DeanTown({ theme }) {
         </Typography>
         <Divider sx={{ my: 2 }} />
         <Stack direction="row" spacing={2} sx={{ display: "flex", justifyContent: "center" }}>
-          <Link to="https://iron-store.adaptable.app/" target="_blank">
+          <Link title="Deployed website" to="https://iron-store.adaptable.app/" target="_blank">
             <LanguageIcon sx={{ color: theme === "light" ? "var(--text-primary)" : "var(--snow)" }} fontSize="large" />
           </Link>
-          <Link to="https://github.com/DeanStavenuiter/ironhack-ecommerce" target="_blank">
+          <Link title="GitHub repo" to="https://github.com/DeanStavenuiter/ironhack-ecommerce" target="_blank">
             <GitHubIcon sx={{ color: theme === "light" ? "var(--text-primary)" : "var(--snow)" }} fontSize="large" />
           </Link>
         </Stack>

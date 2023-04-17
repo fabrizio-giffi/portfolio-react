@@ -22,7 +22,7 @@ function WorkPopper({ display, setDisplay }) {
               justifyContent: "start",
             }}
           >
-            <IconButton
+            <IconButton title="Back to the boring text"
               sx={{
                 position: "absolute",
                 top: 15,
