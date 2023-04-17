@@ -6,25 +6,25 @@
 body.light {
   --text-primary: rgba(0, 0, 0, 0.87);
   --text-secondary: rgba(0, 0, 0, 0.6);
-  --primary: #efaa90;
-  --secondary: #ffe9d9;
-  --sec-trans: rgba(255, 164, 93, 0.4);
+  --text-special: rgba(0, 0, 0, 0.6);
+  --primary: rgb(189, 211, 219);
+  --secondary: rgb(202, 226, 227);
+  --sec-trans: rgba(202, 226, 227, 0.4);
   --snow: rgb(255, 251, 254);
   --comp: rgb(1, 106, 109);
   --comp-trans: rgba(1, 106, 109, 0.8);
-  --contrast: rgb(4, 62, 82);
 }
 
 body.dark {
-  --text-primary: rgba(0, 0, 0, 0.87);
-  --text-secondary: rgba(0, 0, 0, 0.6);
+  --text-primary: rgb(255, 251, 254);
+  --text-secondary: rgba(202, 226, 227, 0.8);
+  --text-special: rgb(255, 251, 254);
   --primary: rgb(4, 62, 82);
   --secondary: rgb(1, 106, 109);
   --sec-trans: rgba(1, 106, 109, 0.4);
   --snow: rgb(255, 251, 254);
   --comp: rgb(255, 164, 93);
   --comp-trans: rgb(255, 164, 93, 0.8);
-  --contrast: rgb(225, 106, 61);
 }
 
 *,
@@ -39,53 +39,25 @@ body {
   background: linear-gradient(39deg, var(--secondary) 24%, var(--primary) 84%);
 }
 
-.light h1,
-.light h2 {
-  font-family: "DM Serif Display", serif;
-  color: var(--text-secondary);
+h1,
+h2 {
+  font-family: "DM Serif Display", serif !important;
+  color: var(--text-special);
 }
 
-.dark h1,
-.dark h2 {
-  font-family: "DM Serif Display", serif;
-  color: var(--snow);
-}
-
-.light h3,
-.light h4,
-.light h5,
-.light h6,
-.light p,
-.light a,
-.light strong {
-  font-family: "DM Sans", sans-serif;
+h4,
+h6,
+p,
+a,
+strong {
+  font-family: "DM Sans", sans-serif !important;
   color: var(--text-primary);
-}
-
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6,
-.dark p,
-.dark a,
-.dark strong {
-  font-family: "DM Sans", sans-serif;
-  color: var(--snow);
-}
-
-button a {
-  color: var(--snow) !important;
-}
-
-#fp-nav span {
-  background: var(--comp-trans) !important;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
 nav {
   position: absolute;
   top: 0;
-  color: var(--snow);
   height: 5rem;
   width: 100%;
   display: flex;
@@ -107,6 +79,10 @@ nav.first {
   transition-property: background-color;
 }
 
+.light nav.scroll {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 nav.scroll {
   background-color: rgba(0, 0, 0, 0.7);
 
@@ -116,29 +92,55 @@ nav.scroll {
   transition: background-color 0.7s ease-in;
 }
 
+nav,
 nav a {
-  color: var(--snow) !important;
+  color: var(--text-special);
   text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+nav:hover {
+  text-decoration-color: var(--text-special);
 }
 
 nav a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--snow);
   text-decoration-thickness: 2px;
   transition: text-decoration-color 500ms;
 }
 
-a {
-  color: var(--secondary);
-  text-decoration: none;
+button {
+  background-color: var(--comp-trans) !important;
 }
 
+button:hover {
+  background-color: var(--comp) !important;
+}
+
+button a {
+  color: var(--snow) !important;
+}
+
+button span {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* fullpage.js - navigation dots */
+#fp-nav span {
+  background: var(--comp-trans) !important;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#fp-nav span:hover {
+  background: var(--comp) !important;
+}
+
+/* fullpage.js - sections background color and background pattern */
 .light #second {
   background-color: var(--snow);
 }
 
 .dark #second {
-  background-color: rgb(25, 25, 25);
+  background-color: rgba(30, 30, 30, 0.9);
 }
 
 #first,

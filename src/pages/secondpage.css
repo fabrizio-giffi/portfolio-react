@@ -19,10 +19,6 @@
   background: linear-gradient(39deg, var(--secondary) 24%, var(--primary) 84%);
 }
 
-.work.clicked h4 {
-  color: var(--snow);
-}
-
 .work#top:hover #topZoom,
 .work#center:hover #centerZoom,
 .work#bottom:hover #bottomZoom {
@@ -39,7 +35,7 @@
 }
 
 .dark .background {
-  --style: linear-gradient(to bottom, transparent 70%, rgb(22, 22, 22));
+  --style: linear-gradient(to bottom, transparent 70%, rgb(27, 36, 37));
 }
 
 .light .background {

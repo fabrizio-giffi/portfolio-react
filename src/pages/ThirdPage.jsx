@@ -55,19 +55,8 @@ function ThirdPage() {
             onChange={(event) => setMessage(event.target.value)}
           />
         </Stack>
-        <Button
-          variant="contained"
-          sx={{
-            bgcolor: "var(--primary)",
-            color: "var(--snow)",
-            "&:hover": {
-              bgcolor: "var(--sec-trans)",
-              color: "var(--text-secondary)",
-            },
-          }}
-          type="submit"
-        >
-          Send
+        <Button variant="contained" type="submit">
+          <span>Send</span>
         </Button>
       </Box>
     </Container>

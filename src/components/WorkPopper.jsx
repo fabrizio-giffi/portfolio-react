@@ -28,8 +28,8 @@ function WorkPopper({ display, setDisplay }) {
                 top: 15,
                 left: 15,
                 zIndex: 2,
-                bgcolor: "rgba(0, 0, 0, 0.4)",
-                "&:hover": { bgcolor: "rgba(0, 0, 0, 0.7)", transform: "scale(1.2)", transition: "transform 0.4s" },
+                bgcolor: "rgba(0, 0, 0, 0.4) !important",
+                "&:hover": { bgcolor: "rgba(0, 0, 0, 0.7) !important", transform: "scale(1.2)", transition: "transform 0.4s" },
               }}
               onClick={() => setDisplay("main")}
             >

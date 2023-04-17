@@ -10,18 +10,14 @@ function FirstPage() {
     <Container sx={{ display: "flex", maxHeight: "100vh", alignItems: "center", justifyContent: "space-around" }}>
       <Box>
         <Typography variant="h1">Fabrizio Giffi</Typography>
-        <Typography mb={3} variant="h4" sx={{ color: theme === "light" ? "var(--text-secondary) !important" : "var(--snow) !important" }}>
+        <Typography
+          mb={3}
+          variant="h4"
+          sx={{ color: theme === "light" ? "var(--text-secondary) !important" : "var(--snow) !important" }}
+        >
           {"< Junior full-stack web developer />"}
         </Typography>
-        <Button
-          variant="contained"
-          sx={{
-            bgcolor: "var(--comp-trans)",
-            "&:hover": {
-              bgcolor: "var(--comp)",
-            },
-          }}
-        >
+        <Button variant="contained">
           <Link to="/CV-FabrizioGiffi.pdf" target="_blank">
             Download Resumé
           </Link>
