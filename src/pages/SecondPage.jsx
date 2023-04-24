@@ -9,11 +9,13 @@ function SecondPage() {
 
   return (
     <Box
+      className="media-switch"
       component="section"
       sx={{ display: "flex", position: "relative", height: "calc(100vh - 5rem)", width: "100%", alignItems: "end" }}
     >
       {display === "main" ? <WorkMain /> : <WorkPopper display={display} setDisplay={setDisplay} />}
       <Box
+        className="work-ctn"
         sx={{
           minWidth: "30%",
           height: "calc(100% - 2.5rem)",
@@ -28,13 +30,13 @@ function SecondPage() {
             Junior Jobs
           </Typography>
         </Box>
-        <Divider sx={{ width: "calc(100% - 21px)", alignSelf: "center" }} />
+        <Divider className="work-divider" sx={{ width: "calc(100% - 21px)", alignSelf: "center" }} />
         <Box className={display === "center" ? "work clicked" : "work"} id="center" onClick={() => setDisplay("center")}>
           <Typography id="centerZoom" variant="h4">
             Dean Town
           </Typography>
         </Box>
-        <Divider sx={{ width: "calc(100% - 21px)", alignSelf: "center" }} />
+        <Divider className="work-divider" sx={{ width: "calc(100% - 21px)", alignSelf: "center" }} />
         <Box className={display === "bottom" ? "work clicked" : "work"} id="bottom" onClick={() => setDisplay("bottom")}>
           <Typography id="bottomZoom" variant="h4">
             Ye OldeJack

@@ -10,8 +10,11 @@ function WorkPopper({ display, setDisplay }) {
   const { theme } = useContext(ThemeContext);
   return (
     <>
-      <Box sx={{ minWidth: "70%", height: "calc(100% - 2.5rem)" }}>
-        <Box sx={{ height: "100%", boxSizing: "border-box", py: 7, px: 10, display: "flex", flexDirection: "column" }}>
+      <Box className="work-popper" sx={{ minWidth: "70%", height: "calc(100% - 2.5rem)" }}>
+        <Box
+          className="ctn"
+          sx={{ height: "100%", boxSizing: "border-box", py: 7, px: 10, display: "flex", flexDirection: "column" }}
+        >
           <Box
             sx={{
               position: "relative",
@@ -22,7 +25,8 @@ function WorkPopper({ display, setDisplay }) {
               justifyContent: "start",
             }}
           >
-            <IconButton title="Back to the boring text"
+            <IconButton
+              title="Back to the boring text"
               sx={{
                 position: "absolute",
                 top: 15,

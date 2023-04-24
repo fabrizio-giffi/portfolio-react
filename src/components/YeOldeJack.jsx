@@ -7,8 +7,8 @@ function YeOldeJack({ theme }) {
   return (
     <>
       <Box className="background olde" sx={{ width: "100%", height: "100%" }}></Box>
-      <Box sx={{ px: 5 }}>
-        <Typography variant="h4" textAlign="center" my={1}>
+      <Box className="ctn" sx={{ px: 5 }}>
+        <Typography className="title" variant="h4" textAlign="center" my={1}>
           Ye OldeJack
         </Typography>
         <Typography variant="h6" color="var(--text-secondary)" textAlign="center">
@@ -25,7 +25,7 @@ function YeOldeJack({ theme }) {
           The game runs on basic <strong>JavaScript</strong>, <strong>HTML</strong> and <strong>CSS</strong> and relies on{" "}
           <strong>DOM manipulation</strong> and <strong>object-oriented programming</strong>.
         </Typography>
-        <Typography variant="subtitle2" textAlign="end">
+        <Typography className="gamble" variant="subtitle2" textAlign="end">
           Gamble responsibly!
         </Typography>
         <Divider sx={{ my: 2 }} />

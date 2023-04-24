@@ -44,7 +44,7 @@ function ThirdPage() {
       {!succesful ? (
         <>
           <Typography variant="h2">Let's work together!</Typography>
-          <Box component="form" method="POST" sx={{ width: "100%", p: 4 }} onSubmit={(event) => sendMessage(event)}>
+          <Box className="form" component="form" method="POST" sx={{ width: "100%", p: 4 }} onSubmit={(event) => sendMessage(event)}>
             <Stack direction="row" spacing={2} sx={{ width: "100%", display: "flex", alignItems: "center", mb: 2 }}>
               <AccountCircleIcon fontSize="large" sx={{ color: theme === "dark" ? "var(--snow)" : "var(--text-secondary)" }} />
               <TextField fullWidth label="Contact info" variant="filled" onChange={(event) => setContact(event.target.value)} />

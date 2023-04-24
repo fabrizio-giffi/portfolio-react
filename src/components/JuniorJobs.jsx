@@ -7,8 +7,8 @@ function JuniorJobs({ theme }) {
   return (
     <>
       <Box className="background junior" sx={{ height: "100%", width: "100%" }}></Box>
-      <Box sx={{ px: 5 }}>
-        <Typography variant="h4" textAlign="center" my={1}>
+      <Box className="ctn" sx={{ px: 5 }}>
+        <Typography className="title" variant="h4" textAlign="center" my={1}>
           Junior Jobs
         </Typography>
         <Typography variant="h6" color="var(--text-secondary)" textAlign="center" mb={2}>

@@ -165,3 +165,14 @@ button span {
 .light #third {
   background-image: url("/light-first.svg");
 }
+
+@media only screen and (max-width: 768px) {
+  .dark #first,
+  .light #first {
+    background-image: none;
+  }
+
+  #fp-nav span {
+    display: none;
+  }
+}

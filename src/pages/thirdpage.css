@@ -24,3 +24,18 @@ label[data-shrink="true"] {
 .MuiInputBase-root::after {
   border-bottom: 2px solid var(--comp-trans) !important;
 }
+
+/* Mobile media query */
+
+@media only screen and (max-width: 768px) {
+  #third h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+  #third h4 {
+    font-size: 2em;
+  }
+  .form {
+    margin-bottom: 2rem;
+  }
+}

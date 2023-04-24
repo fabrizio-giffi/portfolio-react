@@ -61,3 +61,78 @@
 .MuiDivider-root {
   border-color: var(--sec-trans) !important;
 }
+
+/* Mobile media query */
+
+@media only screen and (max-width: 768px) {
+  #second .media-switch {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  #second .ctn {
+    padding: 0 1rem !important;
+    height: calc(100% - 4rem);
+  }
+  .background {
+    height: 150px !important;
+  }
+  #second h2 {
+    font-size: 2.8em !important;
+  }
+  .title {
+    font-size: 1.7em !important;
+    font-weight: 500;
+  }
+  #second h5 {
+    font-size: 1.1em !important;
+  }
+  #second h6 {
+    font-size: 0.9em !important;
+  }
+  #second p {
+    font-size: 0.9em !important;
+  }
+  .work-ctn {
+    position: relative;
+    flex-direction: row !important;
+    gap: 10px;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .main.ctn::after {
+    content: "↓ Check out my recent work ↓";
+    font-family: "DM Sans", sans-serif !important;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    position: absolute;
+    bottom: 100px;
+  }
+
+  .work {
+    height: auto;
+    width: auto;
+    padding: 5px;
+  }
+  .work-popper {
+    height: calc(100% - 4rem) !important;
+  }
+  .work h4 {
+    font-size: 1.1em !important;
+    font-weight: 400;
+  }
+  .work.clicked h4 {
+    font-weight: 500;
+  }
+  .work-divider {
+    display: none;
+  }
+  .gamble {
+    margin-top: 1.5rem !important;
+    text-align: center !important;
+  }
+  .text-cta {
+    display: none;
+  }
+}

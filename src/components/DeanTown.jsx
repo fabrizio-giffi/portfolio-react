@@ -7,8 +7,8 @@ function DeanTown({ theme }) {
   return (
     <>
       <Box className="background dean" sx={{ width: "100%", height: "100%" }}></Box>
-      <Box sx={{ px: 5 }}>
-        <Typography variant="h4" textAlign="center" my={1}>
+      <Box className="ctn" sx={{ px: 5 }}>
+        <Typography className="title" variant="h4" textAlign="center" my={1}>
           Dean Town
         </Typography>
         <Typography variant="h6" color="var(--text-secondary)" textAlign="center" mb={2}>
