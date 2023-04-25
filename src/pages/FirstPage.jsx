@@ -7,7 +7,10 @@ import "./firstpage.css";
 function FirstPage() {
   const { theme } = useContext(ThemeContext);
   return (
-    <Container className="media-switch" sx={{ display: "flex", alignItems: "end", justifyContent: "space-around", mb: 13 }}>
+    <Container
+      className="media-switch"
+      sx={{ height: "100vh", display: "flex", alignItems: "end", justifyContent: "space-around", mb: 13 }}
+    >
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         <Typography variant="h1">Fabrizio Giffi</Typography>
         <Typography
@@ -34,7 +37,7 @@ function FirstPage() {
           </Link>
         </Button>
       </Box>
-      <Box className="ctn-profile">
+      <Box className="ctn-profile" sx={{display: "flex", justifyContent: "center"}}>
         <img src="https://res.cloudinary.com/dujsafeed/image/upload/v1681654707/noBG_ct8mvq.png" alt="Profile" />
         <div className="bkgr"></div>
       </Box>

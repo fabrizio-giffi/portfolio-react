@@ -172,6 +172,11 @@ button span {
     background-image: none;
   }
 
+  nav {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   #fp-nav span {
     display: none;
   }
