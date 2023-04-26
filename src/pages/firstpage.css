@@ -25,6 +25,7 @@
 
 @media only screen and (max-width: 768px) {
   .media-switch {
+    height: 100vh;
     flex-direction: column-reverse;
     align-items: center !important;
     margin-bottom: 0 !important;
