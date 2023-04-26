@@ -65,12 +65,15 @@
 /* Mobile media query */
 
 @media only screen and (max-width: 768px) {
+  #second .active {
+    justify-content: start !important;
+  }
   #second .media-switch {
     flex-direction: column;
     margin-top: 5rem;
   }
   #second .ctn {
-    padding: 0 1rem !important;
+    padding: 0 0.6rem !important;
     height: calc(100% - 4rem);
   }
   .background {
@@ -97,7 +100,7 @@
     flex-direction: row !important;
     gap: 10px;
     height: auto !important;
-    padding: 0 !important;
+    padding: 1rem 0 !important;
   }
 
   .main.ctn::after {
@@ -108,6 +111,10 @@
     font-weight: 500;
     position: absolute;
     bottom: 100px;
+  }
+
+  .work-popper {
+    overflow: auto;
   }
 
   .work {
